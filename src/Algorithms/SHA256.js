@@ -1,3 +1,8 @@
+/*
+ https://github.com/BaseMax/SHA256HashGeneratorJS
+ Based on SHA-256 implementation in JavaScript / Chris Veness 2002-2014 / MIT Licence
+*/
+
 let Sha256 = {};
 Sha256.hash = function (msg) {
   // console.log(msg);
