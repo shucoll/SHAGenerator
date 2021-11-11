@@ -1,13 +1,18 @@
 import { useState } from 'react';
+import SHA256Generator from '../../Algorithms/SHA256';
 import styles from './HashGenerator.module.css';
 
 const HashGenerator = (props) => {
   const [value1, setValue1] = useState('');
   const [value2, setValue2] = useState('');
 
+  const [hashedValue, setHashedValue] = useState();
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    console.log(value1, value2);
+    const hashedValue = SHA256Generator([value1, value2]);
+    setHashedValue(hashedValue);
+    // console.log(hashedValue);
   };
 
   return (
@@ -25,6 +30,9 @@ const HashGenerator = (props) => {
         />
         <input type='submit' value='Submit' />
       </form>
+
+      <h2>Generated Hash</h2>
+      {hashedValue && <h3>{hashedValue}</h3>}
     </div>
   );
 };
