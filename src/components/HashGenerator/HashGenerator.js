@@ -59,7 +59,7 @@ const HashGenerator = (props) => {
         </div>
 
         <h3>Generated Hash</h3>
-        {hashedValue && <h4>{hashedValue}</h4>}
+        {hashedValue && <h4 className={styles.hash}>{hashedValue}</h4>}
       </form>
     </div>
   );
