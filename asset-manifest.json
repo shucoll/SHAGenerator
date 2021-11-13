@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/SHAGenerator/static/css/main.a68bce69.chunk.css",
+    "main.js": "/SHAGenerator/static/js/main.ab72fa93.chunk.js",
+    "main.js.map": "/SHAGenerator/static/js/main.ab72fa93.chunk.js.map",
+    "runtime-main.js": "/SHAGenerator/static/js/runtime-main.497180b4.js",
+    "runtime-main.js.map": "/SHAGenerator/static/js/runtime-main.497180b4.js.map",
+    "static/js/2.4b9c7fc5.chunk.js": "/SHAGenerator/static/js/2.4b9c7fc5.chunk.js",
+    "static/js/2.4b9c7fc5.chunk.js.map": "/SHAGenerator/static/js/2.4b9c7fc5.chunk.js.map",
+    "static/js/3.7a95eed3.chunk.js": "/SHAGenerator/static/js/3.7a95eed3.chunk.js",
+    "static/js/3.7a95eed3.chunk.js.map": "/SHAGenerator/static/js/3.7a95eed3.chunk.js.map",
+    "index.html": "/SHAGenerator/index.html",
+    "static/css/main.a68bce69.chunk.css.map": "/SHAGenerator/static/css/main.a68bce69.chunk.css.map",
+    "static/js/2.4b9c7fc5.chunk.js.LICENSE.txt": "/SHAGenerator/static/js/2.4b9c7fc5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.497180b4.js",
+    "static/js/2.4b9c7fc5.chunk.js",
+    "static/css/main.a68bce69.chunk.css",
+    "static/js/main.ab72fa93.chunk.js"
+  ]
+}
