@@ -5,7 +5,6 @@
 
 let Sha256 = {};
 Sha256.hash = function (msg) {
-  // console.log(msg);
   msg = msg.utf8Encode();
   let K = [
     0x428a2f98, 0x71374491, 0xb5c0fbcf, 0xe9b5dba5, 0x3956c25b, 0x59f111f1,
@@ -135,11 +134,8 @@ if (typeof String.prototype.utf8Decode == 'undefined') {
   };
 }
 
-// if (typeof module != 'undefined' && module.exports) module.exports = Sha256;
-// if (typeof define == 'function' && define.amd)
-//   define([], function () {
-//     return Sha256;
-//   });
+//A server can use such a secret key to generate secrete hash. This key is appended to the end of all user inputs.
+const secretKey = 'tmwt74$2dfdia-uui937-loi*-ddh3!';
 
 const hashingFunction = (values) => {
   function joinData(data) {
@@ -147,13 +143,13 @@ const hashingFunction = (values) => {
     for (let i = 0; i < data.length; i++) {
       joinedString = joinedString + data[i];
     }
+    joinedString += secretKey;
+    console.log(joinedString);
     return joinedString;
   }
 
   values.sort();
-  // console.log(values);
   let value = joinData(values);
-  // console.log(value);
   let hashValue = Sha256.hash(value);
   return hashValue;
 };
